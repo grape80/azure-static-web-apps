@@ -1,3 +1,7 @@
+# Can not update this workflow link in the Azure portal.
+# REF: https://github.com/Azure/static-web-apps/issues/290
+
+# REF: https://docs.github.com/ja/enterprise-cloud@latest/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-to-azure-static-web-app
 on:
   push:
     branches:
@@ -23,6 +27,7 @@ jobs:
           skip_api_build: true
 
   close_pull_request_job:
+  # REF: https://github.com/MicrosoftDocs/azure-docs/issues/55476
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
     steps:
