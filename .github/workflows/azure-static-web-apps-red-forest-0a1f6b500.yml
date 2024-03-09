@@ -1,9 +1,9 @@
 name: Azure Static Web Apps CI/CD
 
 env:
-  APP_LOCATION: "app"
+  APP_LOCATION: "/"
   API_LOCATION: ""
-  OUTPUT_LOCATION: ""
+  OUTPUT_LOCATION: "app"
 
 on:
   push:
